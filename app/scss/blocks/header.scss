@@ -1,0 +1,61 @@
+.header {
+  background: #FFFFFF;
+  border: 1px solid #DBDCDE;
+  box-sizing: border-box;
+  box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
+  border-radius: 8px;
+  &-title {
+    background-color: #fff;
+    padding: 28px 32px;
+    font-family: 'Work Sans', sans-serif;
+    color: #2F2F30;
+    font-size: 24px;
+    font-weight: 400;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  &-serv {
+    padding: 16px 32px;
+    background-color: #FAFAFA;
+    color: #2F2F30;
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 1px solid #DBDCDE;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  &-search {
+    margin-right: 40px;
+    position: relative;
+    &__input {
+      background: #FFFFFF;
+      border: 1px solid #DBDCDE;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 8px;
+      padding-left: 42px;
+    }
+    label {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: .6;
+      font-weight: 400;
+    }
+  }
+  &-statuses {
+    select {
+      border: none;
+      background-color: transparent;
+      max-width: 100px;
+      vertical-align: middle;
+    }
+    select::focus {
+      border: none;
+      outline: none;
+    }
+  }
+}

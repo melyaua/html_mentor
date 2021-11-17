@@ -1,0 +1,14 @@
+@media screen and (max-width: 576px) {
+  .header-serv {
+    flex-direction: column;
+  }
+  .header-search {
+    margin: 0;
+  }
+  .header-statuses {
+    margin-top: 10px;
+  }
+  .header-title {
+    text-align: center;
+  }
+}

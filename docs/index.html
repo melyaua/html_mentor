@@ -5,41 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1636982549646">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Code+Pro&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/main.css?t=1637188422434">
 </head>
 
 <body>
-    <svg>
-        <use xlink:href="img/svg/sprite.svg#clock"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/svg/sprite.svg#coin"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/svg/sprite.svg#clouds-fill"></use>
-    </svg>
-    <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
-    <div class="test">
-        <!-- подключаем шапку -->
-        <header>
-    Шапка сайта
-</header>
-
-        <div class="test__content">
-            <picture><source srcset="img/mentor.webp" type="image/webp"><img class="test__img" src="img/mentor.jpg" alt="mentor picture"></picture>
-            <div class="test__pic"></div>
+    <div class="container">
+        <div class="app">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-title">
+                    <h3>Donations</h3>
+                </div>
+                <div class="header-serv">
+                    <div class="header-search">
+                        <input type="search" id="before" required class="header-search__input" placeholder="Search">
+                        <label for="before">
+                            <i class="fas fa-search"></i>
+                        </label>
+                    </div>
+                    <div class="header-statuses">
+                        <select name="search_list">
+                              <option value="1">All statuses</option>
+                              <option value="2">Ready dev</option>
+                              <option value="3">Pull request</option>
+                              <option value="4">Merged</option>
+                          </select>
+                    </div>
+                </div>
+            </header>
         </div>
-
-        <!-- подключаем подвал -->
-        <footer>
-    Подвал сайта
-</footer>
-
     </div>
 
-
     <!-- подключаем js -->
-    <script src="js/main.js?t=1636982549646"></script>
+    <script src="js/main.js?t=1637188422434"></script>
 </body>
 
 </html>
