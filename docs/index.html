@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/main.css?t=1637222978739">
+    <link rel="stylesheet" href="css/main.css?t=1637225832010">
 </head>
 
 <body>
@@ -83,34 +83,60 @@
                     </section>
                     <section class="info">
                         <div class="info-tabs">
-                            <div class="tabs">
-                                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-                                <label for="tab-btn-1">Вкладка 1</label>
-                                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-                                <label for="tab-btn-2">Вкладка 2</label>
-                                <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-                                <label for="tab-btn-3">Вкладка 3</label>
-                                <input type="radio" name="tab-btn" id="tab-btn-4" value="">
-                                <label for="tab-btn-4">Вкладка 4</label>
-                                <input type="radio" name="tab-btn" id="tab-btn-5" value="">
-                                <label for="tab-btn-5">Вкладка 5</label>
-                            
-                                <div id="content-1">
-                                  Содержимое 1...
-                                </div>
-                                <div id="content-2">
-                                  Содержимое 2...
-                                </div>
-                                <div id="content-3">
-                                  Содержимое 3...
-                                </div>
-                                <div id="content-4">
-                                    Содержимое 4...
-                                </div>
-                                <div id="content-5">
-                                    Содержимое 5...
-                                </div>
-                              </div>
+                            <div class="tabs-wrapper">
+                                <ul class="tabs">
+                                    <li class="active">Behavior</li>
+                                    <li>Appearance</li>
+                                    <li>Custom fields</li>
+                                    <li>Questions</li>
+                                    <li>Url control</li>
+                                </ul>
+                            </div>
+                        
+                            <ul class="tab__content">
+                                <li class="active">
+                                    <div class="content__wrapper">
+                                        <h2 class="text-color">Her</h2>
+                                        
+                                        <picture><source srcset="http://lewihussey.com/codepen-img/her.webp" type="image/webp"><img src="http://lewihussey.com/codepen-img/her.jpg"></picture>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content__wrapper">
+                                        <h2 class="text-color">Pick a color</h2>
+                                        
+                                        <ul class="colors">
+                                            <li data-color="#2ecc71"></li>
+                                            <li data-color="#D64A4B"></li>
+                                            <li data-color="#8e44ad"></li>
+                                            <li class="active-color" data-color="#46a1de"></li>
+                                            <li data-color="#bdc3c7"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="content__wrapper">
+                                        <h2 class="text-color">About</h2>
+                                        
+                                        <p>Created by <a class="text-color" href="http://lewihussey.com" target="_blank">Lewi Hussey</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content__wrapper">
+                                        <h2 class="text-color">Also about</h2>
+                                        
+                                        <p>Created by <a class="text-color" href="http://lewihussey.com" target="_blank">Lewi Hussey</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content__wrapper">
+                                        <h2 class="text-color">Home</h2>
+                                        
+                                        <p>Created by <a class="text-color" href="http://lewihussey.com" target="_blank">Lewi Hussey</a></p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </section>
                 </section>
@@ -143,7 +169,7 @@
 
     <!-- подключаем js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js?t=1637222978739"></script>
+    <script src="js/main.js?t=1637225832010"></script>
 </body>
 
 </html>
