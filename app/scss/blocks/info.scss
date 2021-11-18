@@ -15,6 +15,7 @@
 	transform: translateY(5px);
 	padding: 24px;
   padding-bottom: 0;
+	display: flex;
 	>li{
 		display: table-cell;
 		list-style: none;
@@ -77,6 +78,28 @@
 			}
 		}
 	}
+	&-submit {
+		background: #FFFBEC;
+		padding: 24px 32px;
+		border-top: 1px solid #DBDCDE;
+		border-radius: 0px 0px 8px 8px;
+		&__submit {
+			padding: 12px 24px;
+			background: #2EB670;
+			border-radius: 6px;
+			border: none;
+			color: #fff;
+			outline: none;
+			margin-right: 16px;
+		}
+		&__cancel {
+			padding: 12px 24px;
+			background: #FFFFFF;
+			border: 1px solid #A9ABAE;
+			box-sizing: border-box;
+			border-radius: 8px;
+		}
+	}
 }
 
 .tabs-wrapper {
@@ -88,7 +111,17 @@
 	position: relative;
 	width: 100%;
 	border-radius: 5px;
-	
+	.checkout_settings {
+		margin-bottom: 24px;
+	}
+	#checkout_settings {
+		padding: 8px 12px;
+		background: #FFFFFF;
+		border: 1px solid #A9ABAE;
+		border-radius: 6px;
+		width: 296px;
+		outline: none;
+	}
 	>li{
 		width: 100%;
 		position: absolute;
@@ -99,10 +132,9 @@
 		list-style: none;
 		
 		.content__wrapper{
-			text-align: center;
 			border-radius: 5px;
 			width: 100%;
-			padding: 45px 40px 40px 40px;
+			padding: 40px 60px;
 			background-color: white;
 		}
 	}
@@ -115,11 +147,34 @@
 		padding-bottom: 20px;
 		font-weight: 300;
 	}
-	
-	img{
-		width: 100%;
-		height: auto;
-		border-radius: 5px;
+	label {
+		flex-basis: 124px;
+		display: inline-block;
+		text-align: right;
+		font-family: Work Sans;
+		font-size: 16px;
+		line-height: 24px;
+		color: #2F2F30;
+		margin-right: 16px;
+	}
+	.goal {
+		display: flex;
+		&_input {
+			padding: 8px 12px;
+			background: #FFFFFF;
+			border: 1px solid #A9ABAE;
+			border-radius: 6px;
+			margin-right: 24px;
+			width: 192px;
+		}
+		&_settings {
+			padding: 8px 12px;
+			background: #FFFFFF;
+			border: 1px solid #A9ABAE;
+			border-radius: 6px;
+			position: relative;
+			width: 80px;
+		}
 	}
 }
 
