@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/main.css?t=1637237475750">
+    <link rel="stylesheet" href="css/main.css?t=1637275666018">
 </head>
 
 <body>
@@ -116,13 +116,15 @@
                                             <label for="goal_settings" class="goal_text">
                                                 Goal
                                             </label>
-                                            <input type="text" placeholder="$10.00" class="goal_input">
+                                            <div class="goal-wrap">
+                                                <input type="text" placeholder="$10.00" class="goal_input">
                                             <select name="goal_list" id="goal_settings" class="goal_settings">
                                                 <option value="1">USD</option>
                                                 <option value="2">EUR</option>
                                                 <option value="3">GBP</option>
                                                 <option value="4">AUD</option>
                                             </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -138,8 +140,7 @@
                                             <li data-color="#bdc3c7"></li>
                                         </ul>
                                     </div>
-                                </li>
-                                
+                                </li>        
                                 <li>
                                     <div class="content__wrapper">
                                         <h2 class="text-color">About</h2>
@@ -186,7 +187,7 @@
                                 <p><a href="#">Change Date</a></p>
                             </li>
                             <li class="sidebar-menu__item">
-                                <picture><source srcset="../img/x-circle.webp" type="image/webp"><img src="../img/x-circle.png" alt="#"></picture>
+                                <picture><source srcset="img/x-circle.webp" type="image/webp"><img src="img/x-circle.png" alt="#"></picture>
                                 <p><a href="#">Cancal Recurring</a></p>
                             </li>
                         </ul>
@@ -198,7 +199,7 @@
 
     <!-- подключаем js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js?t=1637237475750"></script>
+    <script src="js/main.js?t=1637275666018"></script>
 </body>
 
 </html>

@@ -24,6 +24,7 @@
     display: block;
   }
   .donation {
+    margin-bottom: 20px;
     &-descr {
       flex-direction: column;
       &__item {
@@ -37,6 +38,10 @@
         }
       }
     }
+  }
+  .designation {
+    flex-direction: column;
+    flex-basis: 0px;
   }
 }
 

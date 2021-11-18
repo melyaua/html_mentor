@@ -47,11 +47,28 @@
     }
   }
   &-statuses {
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+      content: "";
+      width: 0.5em;
+      height: 0.5em;
+      justify-self: end;
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+      transform: rotate(45deg);
+}
+    }
     select {
       border: none;
       background-color: transparent;
       max-width: 100px;
       vertical-align: middle;
+      font-family: 'Work Sans', sans-serif;
+      color: #2F2F30;
     }
     select::focus {
       border: none;

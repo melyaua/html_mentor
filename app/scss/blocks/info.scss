@@ -3,6 +3,9 @@
   border: 1px solid #DBDCDE;
   box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
   border-radius: 8px;
+	&-tabs {
+		overflow: hidden;
+	}
 }
 
 .section-wrap {
@@ -133,7 +136,6 @@
 		
 		.content__wrapper{
 			border-radius: 5px;
-			width: 100%;
 			padding: 40px 60px;
 			background-color: white;
 		}
