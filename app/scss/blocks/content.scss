@@ -1,0 +1,14 @@
+#main {
+  display: flex;
+}
+.content {
+  flex-grow: 1;
+  max-width: 936px;
+  margin-right: 24px;
+  height: 3000px;
+}
+
+aside {
+  flex-shrink: 0;
+  width: 264px;
+}

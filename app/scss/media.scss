@@ -1,4 +1,13 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 964px) {
+  .content {
+    margin: 0;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 675px) {
   .header-serv {
     flex-direction: column;
   }
@@ -10,5 +19,29 @@
   }
   .header-title {
     text-align: center;
+  }
+  #main {
+    display: block;
+  }
+  .donation {
+    &-descr {
+      flex-direction: column;
+      &__item {
+        padding-bottom: 10px;
+        text-align: center;
+        &::after {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .donation-total {
+    flex-direction: column;
   }
 }
