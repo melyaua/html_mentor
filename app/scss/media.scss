@@ -40,8 +40,10 @@
     }
   }
   .designation {
-    flex-direction: column;
     flex-basis: 0px;
+  }
+  .tabs>li:last-child {
+    margin-bottom: 10px;
   }
 }
 

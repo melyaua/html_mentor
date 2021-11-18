@@ -16,7 +16,7 @@ select {
   // Additional resets for further consistency
   background-color: transparent;
   border: none;
-  padding: 0 24px 0 0;
+  padding: 0 1em 0 0;
   margin: 0;
   width: 100%;
   font-family: inherit;
@@ -60,17 +60,13 @@ select::-ms-expand {
 }
 
 .select::after {
-  position: absolute;
-  top: 50%;
-  right: 8px;
-  transform: translateY(-50%);
   content: "";
   width: 0.5em;
   height: 0.5em;
-  justify-self: end;
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
   transform: rotate(45deg);
+  justify-self: end;
 }
 
 select,
