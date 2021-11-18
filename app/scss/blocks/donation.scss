@@ -1,0 +1,159 @@
+.donation {
+  background: #FFFFFF;
+  border: 1px solid #DBDCDE;
+  box-sizing: border-box;
+  box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
+  border-radius: 8px;
+  &-total {
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-soum {
+
+  }
+  &-type {
+    h5 {
+      font-family: Work Sans;
+      font-size: 14px;
+      line-height: 20px;
+      color: #2F2F30;
+      font-weight: 400;
+      padding-left: 26px;
+      position: relative;
+      margin-bottom: 4px;
+      &::before {
+        position: absolute;
+        content: url(../../img/dollar-sign.png);
+        display: inline-block;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  &-currency {
+    display: flex;
+    align-items: center;
+    &__real {
+      margin-right: 8px;
+      h3 {
+        font-family: Work Sans;
+        font-size: 24px;
+        line-height: 32px;
+        color: #00A651;
+      }
+    }
+    &__tran {
+      span {
+        font-family: Work Sans;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6C6D6F;
+      }
+    }
+  }
+  &-code {
+    padding-right: 26px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: url(../../img/copy.png);
+      display: inline-block;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+  &-id {
+    span {
+      font-family: Source Code Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #aeaeae;
+    }
+  }
+  &-hash {
+    font-family: Source Code Pro;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F2F30;
+  }
+  &-descr {
+    display: flex;
+    padding: 16px 32px;
+    background: #FAFAFA;
+    border-top: 1px solid #DBDCDE;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  &-status {
+    position: relative;
+    &__item {
+      &:last-child {
+        &::after {
+          display: none;;
+        }
+      }
+    }
+    &::before {
+      position: absolute;
+      content: url(../../img/check.png);
+      display: inline-block;
+      bottom: 0;
+      left: 0;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background-color: #D7D8DA;
+      right: 0;
+      top: 0;
+    }
+    span {
+      font-family: Work Sans;
+      font-size: 14px;
+      line-height: 20px;
+      color: #6C6D6F;
+    }
+    p {
+      padding-left: 26px;
+      font-family: Work Sans;
+      font-size: 16px;
+      line-height: 24px;
+      color: #00A651;
+      padding-right: 32px;
+    }
+  }
+  &-supporter, &-campaign {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background-color: #D7D8DA;
+      right: 0;
+      top: 0;
+    }
+    padding: 0px 32px;
+    span {
+      font-family: Work Sans;
+      font-size: 14px;
+      line-height: 20px;
+      color: #6C6D6F;
+    }
+    p {
+      font-family: Work Sans;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration-line: underline;
+      color: #6665DD;
+    }
+  }
+}

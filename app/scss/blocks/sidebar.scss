@@ -1,0 +1,35 @@
+.sidebar {
+  &-nav {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
+    border: 1px solid #DBDCDE;
+    position: sticky;
+    top: 0;
+  }
+  &-menu {
+    list-style: none;
+    &__item {
+      border-bottom: 1px solid #DBDCDE;
+      display: flex;
+      align-items: center;
+      padding-left: 18px;
+      &:hover {
+        background-color: #F3F3F3;     
+       }
+      a {
+        display: inline-block;
+        padding: 12px;
+        font-family: Work Sans;
+        font-size: 16px;
+        line-height: 28px;
+        text-decoration: none;
+        color: #2F2F30;
+        &:hover {
+
+        }
+      }
+    }
+    
+  }
+}

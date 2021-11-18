@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Code+Pro&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -37,10 +37,77 @@
                     </div>
                 </div>
             </header>
+            <!-- Main section -->
+            <main id="main">
+                <section class="content">
+                    <div class="donation">
+                        <div class="donation-total">
+                            <div class="donation-soum">
+                                <div class="donation-type">
+                                    <h5>Donation</h5>
+                                </div>
+                                <div class="donation-currency">
+                                    <div class="donation-currency__real">
+                                        <h3>€20.60 EUR</h3>
+                                    </div>
+                                    <div class="donation-currency__tran">
+                                        <span>≈ $22.22 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donation-code">
+                                <div class="donation-id">
+                                    <span>ID</span>
+                                </div>
+                                <div class="donation-hash">
+                                    DYHY694Y
+                                </div>
+                            </div>
+                        </div>
+                        <div class="donation-descr">
+                            <div class="donation-status donation-descr__item">
+                                <span>Status</span>
+                                <p>Success</p>
+                            </div>
+                            <div class="donation-supporter donation-descr__item">
+                                <span>Supporter</span>
+                                <p>Charlotte Ann</p>
+                            </div>
+                            <div class="donation-campaign donation-descr__item">
+                                <span>Campaign</span>
+                                <p>Workout for water</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <ul class="sidebar-menu">
+                            <li class="sidebar-menu__item">
+                                <img src="../img/repeat.png" alt="#">
+                                <p><a href="#">Change Amount</a></p>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <img src="../img/wallet.png" alt="#">
+                                <p><a href="#">Change Payment Method</a></p>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <img src="../img/calendar.png" alt="#">
+                                <p><a href="#">Change Date</a></p>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <img src="../img/x-circle.png" alt="#">
+                                <p><a href="#">Cancal Recurring</a></p>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </main>
         </div>
     </div>
 
     <!-- подключаем js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

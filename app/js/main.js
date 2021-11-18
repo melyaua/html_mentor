@@ -1,2 +1,2 @@
-import {testFunction} from './scripts/test';
-testFunction();
+// Кастомный скрипт для вставки Google Analytics и прочихпше  скриптов
+console.log('Hello, World!')
