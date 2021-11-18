@@ -1,5 +1,4 @@
 .info {
-  padding: 24px;
   background: #FFFFFF;
   border: 1px solid #DBDCDE;
   box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
@@ -10,52 +9,168 @@
   width: 100%;
 }
 
-.tabs {
-  font-size: 0;
+.tabs{
+	width: 100%;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	padding: 24px;
+  padding-bottom: 0;
+	>li{
+		display: table-cell;
+		list-style: none;
+		text-align: center;
+		padding: 14px 16px 12px 16px;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		color: #2F2F30;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+		border-radius: 8px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2F2F30;
+		&:before{
+			z-index: -1;
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 120%;
+			top: 0;
+			left: 0;
+			background-color: rgba(255, 255, 255, .3);
+			-webkit-transform: translateY(100%);
+			transform: translateY(100%);
+			transition-duration: .25s;
+			border-radius: 5px 5px 0 0;
+		}
+		
+		&:hover{
+			&:before{
+				-webkit-transform: translateY(70%);
+				transform: translateY(70%);
+			}
+		}
+		
+		&.active{
+      border: 1px solid #DBDCDE;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom: 0;
+      font-family: Work Sans;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #00A651;
+			&:before{
+				transition-duration: .5s;
+				background-color: white;
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+	}
 }
 
-.tabs>input[type="radio"] {
-  display: none;
+.tabs-wrapper {
+  border-bottom: 1px solid #DBDCDE;
 }
 
-.tabs>div {
-  /* скрыть контент по умолчанию */
-  display: none;
-  border: 1px solid #e0e0e0;
-  padding: 10px 15px;
-  font-size: 16px;
+.tab__content{
+	background-color: white;
+	position: relative;
+	width: 100%;
+	border-radius: 5px;
+	
+	>li{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		display: none;
+		list-style: none;
+		
+		.content__wrapper{
+			text-align: center;
+			border-radius: 5px;
+			width: 100%;
+			padding: 45px 40px 40px 40px;
+			background-color: white;
+		}
+	}
 }
 
-/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-#tab-btn-1:checked~#content-1,
-#tab-btn-2:checked~#content-2,
-#tab-btn-3:checked~#content-3,
-#tab-btn-4:checked~#content-4,
-#tab-btn-5:checked~#content-5 {
-  display: block;
+.content__wrapper{
+	h2{
+		width: 100%;
+		text-align: center;
+		padding-bottom: 20px;
+		font-weight: 300;
+	}
+	
+	img{
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+	}
 }
 
-.tabs>label {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  background-color: #f5f5f5;
-  border: 1px solid #e0e0e0;
-  padding: 2px 8px;
-  font-size: 16px;
-  line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-  cursor: pointer;
-  position: relative;
-  top: 1px;
-}
-
-.tabs>label:not(:first-of-type) {
-  border-left: none;
-}
-
-.tabs>input[type="radio"]:checked+label {
-  background-color: #fff;
-  border-bottom: 1px solid #fff;
+.colors{
+	text-align: center;
+	padding-top: 20px;
+	
+	>li{
+		list-style: none;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border-bottom: 5px solid rgba(0, 0, 0, .1);
+		display: inline-block;
+		margin: 0 10px;
+		cursor: pointer;
+		transition-duration: .2s;
+		box-shadow: 0 2px 1px rgba(0, 0, 0, .2);
+		
+		&:hover{
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+			border-bottom: 10px solid rgba(0, 0, 0, .15);
+			box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+		}
+		
+		&.active-color{
+			-webkit-transform: scale(1.2) translateY(-10px);
+			transform: scale(1.2) translateY(-10px);
+			box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+			border-bottom: 20px solid rgba(0, 0, 0, .15);
+		}
+		
+		&:nth-child(1){
+			background-color: #2ecc71;
+		}
+		
+		&:nth-child(2){
+			background-color: #D64A4B;
+		}
+		
+		&:nth-child(3){
+			background-color: #8e44ad;
+		}
+		
+		&:nth-child(4){
+			background-color: #46a1de;
+		}
+		
+		&:nth-child(5){
+			background-color: #bdc3c7;
+		}
+	}
 }
